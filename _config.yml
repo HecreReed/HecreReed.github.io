@@ -1,0 +1,38 @@
+# Site settings
+title: My Wiki
+description: Personal knowledge base and documentation
+baseurl: ""
+url: "https://HecreReed.github.io"
+
+# Theme settings
+theme: jekyll-theme-cayman
+# Alternative themes you can try:
+# theme: minima
+# remote_theme: just-the-docs/just-the-docs
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections for organizing wiki content
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+# Navigation
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
