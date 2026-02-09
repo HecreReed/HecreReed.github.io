@@ -83,76 +83,185 @@ Codex 有多种包月渠道可选，价格从几美元到几十美元不等，�
 
 ---
 
-## API 基础使用
+## API 配置与管理
 
-虽然大多数人通过 VS Code 插件或 Codex App 使用，但了解 API 的基本用法也很有帮助。
+对于需要使用多个 API 提供商或频繁切换配置的用户，推荐使用 **cc-switch** 工具。
 
-### 配置 API Key
+### 什么是 cc-switch
+
+cc-switch 是一个跨平台的 All-in-One 配置管理工具，专门为 Claude Code、Codex、Gemini 等 AI CLI 工具设计。它可以让你轻松管理多个 API Key 和中转服务配置，一键切换不同的提供商。
+
+**主要功能：**
+- 管理多个 API 配置（官方 API、中转服务等）
+- 一键切换不同的提供商
+- 支持 Claude、OpenAI Codex、Gemini 等多种 AI 工具
+- 跨平台支持（Windows、macOS、Linux）
+- 提供桌面版和 CLI 版本
+
+### 安装 cc-switch
+
+**桌面版（推荐）：**
+
+访问 [cc-switch GitHub](https://github.com/farion1231/cc-switch) 下载对应平台的安装包。
+
+**CLI 版本：**
 
 ```bash
-# 设置环境变量
-export OPENAI_API_KEY="your-api-key-here"
+# 使用 npm 安装
+npm install -g cc-switch-cli
 
-# 或者在代码中配置
+# 或者使用 yarn
+yarn global add cc-switch-cli
 ```
 
-### Python 示例
+### 配置 API 提供商
 
-```python
-import openai
+使用 cc-switch 配置 Codex API 非常简单，只需 4 步：
 
-openai.api_key = "your-api-key-here"
+**1. 启动 cc-switch**
 
-# 使用 Codex 生成代码
-response = openai.ChatCompletion.create(
-    model="gpt-5.2",  # 或 gpt-5.3-codex
-    messages=[
-        {"role": "system", "content": "You are a helpful coding assistant."},
-        {"role": "user", "content": "Write a Python function to calculate fibonacci numbers"}
-    ],
-    temperature=0.2,  # 代码生成建议使用较低的 temperature
-)
-
-print(response.choices[0].message.content)
+```bash
+# 桌面版：直接打开应用
+# CLI 版：运行命令
+cc-switch
 ```
 
-### Node.js 示例
+**2. 添加提供商**
 
-```javascript
-const OpenAI = require('openai');
+在 cc-switch 中添加你的 API 配置：
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+```bash
+# 添加 OpenAI 官方 API
+cc-switch add openai-official \
+  --api-key "your-openai-api-key" \
+  --base-url "https://api.openai.com/v1"
 
-async function generateCode() {
-  const completion = await openai.chat.completions.create({
-    model: "gpt-5.2",
-    messages: [
-      { role: "system", content: "You are a helpful coding assistant." },
-      { role: "user", content: "Write a JavaScript function to sort an array" }
-    ],
-    temperature: 0.2,
-  });
+# 添加中转服务（如 rightcode）
+cc-switch add rightcode \
+  --api-key "your-rightcode-api-key" \
+  --base-url "https://api.rightcode.cn/v1"
 
-  console.log(completion.choices[0].message.content);
-}
-
-generateCode();
+# 添加另一个中转服务（如 ikuncode）
+cc-switch add ikuncode \
+  --api-key "your-ikuncode-api-key" \
+  --base-url "https://api.ikuncode.cc/v1"
 ```
 
-### 选择思考模式
+**3. 切换提供商**
 
-在 API 中，可以通过参数控制思考深度：
+需要切换时，只需一条命令：
 
-```python
-response = openai.ChatCompletion.create(
-    model="gpt-5.2",
-    messages=[...],
-    # 使用 reasoning_effort 参数控制思考模式
-    reasoning_effort="high",  # 可选: low, medium, high, xhigh
-)
+```bash
+# 切换到 rightcode
+cc-switch use rightcode
+
+# 切换到官方 API
+cc-switch use openai-official
+
+# 查看当前使用的提供商
+cc-switch current
 ```
+
+**4. 查看所有配置**
+
+```bash
+# 列出所有配置的提供商
+cc-switch list
+
+# 输出示例：
+# ✓ rightcode (active)
+#   openai-official
+#   ikuncode
+```
+
+### 使用场景
+
+**场景一：官方 API 和中转服务切换**
+
+```bash
+# 平时使用便宜的中转服务
+cc-switch use rightcode
+
+# 中转服务不稳定时，切换到官方 API
+cc-switch use openai-official
+```
+
+**场景二：多个中转服务备份**
+
+```bash
+# 配置多个中转服务作为备份
+cc-switch add rightcode-1 --api-key "key1" --base-url "url1"
+cc-switch add rightcode-2 --api-key "key2" --base-url "url2"
+
+# 一个服务出问题时，立即切换到另一个
+cc-switch use rightcode-2
+```
+
+**场景三：不同项目使用不同配置**
+
+```bash
+# 个人项目使用中转服务
+cd ~/personal-project
+cc-switch use rightcode
+
+# 公司项目使用官方 API
+cd ~/work-project
+cc-switch use openai-official
+```
+
+### 桌面版界面
+
+cc-switch 的桌面版提供了图形化界面，更加直观：
+
+- **配置管理**：可视化添加、编辑、删除配置
+- **一键切换**：点击即可切换提供商
+- **状态显示**：实时显示当前使用的配置
+- **测试连接**：可以测试 API 是否可用
+
+### 高级功能
+
+**配置模板：**
+
+cc-switch 支持配置模板，可以快速添加常用的中转服务：
+
+```bash
+# 使用模板添加 rightcode
+cc-switch add-from-template rightcode
+
+# 使用模板添加 ikuncode
+cc-switch add-from-template ikuncode
+```
+
+**环境变量导出：**
+
+cc-switch 可以将当前配置导出为环境变量：
+
+```bash
+# 导出当前配置
+cc-switch export
+
+# 输出：
+# export OPENAI_API_KEY="your-key"
+# export OPENAI_BASE_URL="your-base-url"
+```
+
+**配置备份：**
+
+```bash
+# 备份所有配置
+cc-switch backup config-backup.json
+
+# 恢复配置
+cc-switch restore config-backup.json
+```
+
+### 为什么推荐 cc-switch
+
+1. **简化管理**：不用手动修改配置文件或环境变量
+2. **快速切换**：一条命令即可切换提供商
+3. **多工具支持**：同时管理 Claude、Codex、Gemini 的配置
+4. **避免错误**：图形化界面减少配置错误
+5. **配置同步**：可以在多台设备间同步配置
 
 ---
 
@@ -259,3 +368,16 @@ A: 可以。比如同时订阅 GPT Plus（用 Codex）和 Claude 中转服务，
 ---
 
 [返回目录](index) | [上一章：安装与配置](installation) | [下一章：基础使用](basic-usage)
+
+---
+
+## 参考资料
+
+- [cc-switch 官方 GitHub](https://github.com/farion1231/cc-switch)
+- [cc-switch CLI 版本](https://github.com/thomas-jack/cc-switch-cli)
+- [cc-switch 5 分钟入门指南](https://help.apiyi.com/en/cc-switch-beginner-guide-en.html)
+- [cc-switch 配置教程（以 APIYI 为例）](https://blog.wentuo.ai/en/cc-switch-add-provider-tutorial-en.html)
+- [CCS 文档](https://docs.claudekit.cc/docs/tools/ccs)
+- [CCS 多账号切换工具](https://ccs.kaitran.ca/)
+- [如何使用 OpenAI Codex 配置自己的 API Key](https://zeabur.com/blogs/use-codex-with-ai-hub)
+
