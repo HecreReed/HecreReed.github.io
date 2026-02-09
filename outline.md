@@ -1,6 +1,7 @@
 ---
-title: AI Agent 使用指南大纲
 layout: default
+title: 完整大纲
+nav_order: 10
 ---
 
 # AI Agent 与 AI 使用指南 - 完整大纲

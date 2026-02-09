@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第二部分：Claude Code 篇
+title: Claude Code 篇
+nav_order: 3
+has_children: true
+permalink: /02-claude-code/
 ---
 
 # 第二部分：Claude Code 篇

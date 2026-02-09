@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第三部分：Codex 篇
+title: Codex 篇
+nav_order: 4
+has_children: true
+permalink: /03-codex/
 ---
 
 # 第三部分：OpenAI Codex 篇

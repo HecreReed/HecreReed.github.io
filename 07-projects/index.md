@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第七部分：实战项目篇
+title: 实战项目篇
+nav_order: 8
+has_children: true
+permalink: /07-projects/
 ---
 
 # 第七部分：实战项目篇

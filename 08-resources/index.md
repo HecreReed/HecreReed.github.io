@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第八部分：资源与附录
+title: 资源与附录
+nav_order: 9
+has_children: true
+permalink: /08-resources/
 ---
 
 # 第八部分：资源与附录

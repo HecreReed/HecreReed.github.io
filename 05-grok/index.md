@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第五部分：Grok 篇
+title: Grok 篇
+nav_order: 6
+has_children: true
+permalink: /05-grok/
 ---
 
 # 第五部分：xAI Grok 篇

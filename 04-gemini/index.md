@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第四部分：Gemini 篇
+title: Gemini 篇
+nav_order: 5
+has_children: true
+permalink: /04-gemini/
 ---
 
 # 第四部分：Google Gemini 篇

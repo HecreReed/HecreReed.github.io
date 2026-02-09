@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第六部分：进阶与对比篇
+title: 进阶与对比篇
+nav_order: 7
+has_children: true
+permalink: /06-advanced/
 ---
 
 # 第六部分：进阶与对比篇

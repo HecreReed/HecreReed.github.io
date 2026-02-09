@@ -1,6 +1,9 @@
 ---
 layout: default
-title: 第一部分：入门篇
+title: 入门篇
+nav_order: 2
+has_children: true
+permalink: /01-introduction/
 ---
 
 # 第一部分：入门篇
@@ -9,26 +12,13 @@ title: 第一部分：入门篇
 
 ## 📚 章节内容
 
-### [1. 什么是 AI Agent](what-is-ai-agent.md)
-- AI Agent 的定义与概念
-- AI Agent 与传统 AI 的区别
-- AI Agent 的应用场景
-- 为什么需要学习 AI Agent
+本部分包含以下章节，建议按顺序阅读：
 
-### [2. 准备工作](getting-started.md)
-- 账号注册与认证
-- API Key 获取与管理
-- 低价获取渠道
-- 开发环境配置
-- 费用与计费说明
-- 安全与隐私注意事项
+1. [什么是 AI Agent](what-is-ai-agent) - 理解 AI Agent 的核心概念
+2. [准备工作](getting-started) - 完成必要的配置
+3. [基础概念](basic-concepts) - 掌握必要术语
 
-### [3. 基础概念](basic-concepts.md)
-- Prompt Engineering 基础
-- Token 与上下文窗口
-- 温度参数与采样策略
-- 流式输出与批量处理
-- 常见术语表
+---
 
 ## 📖 推荐阅读顺序
 
@@ -38,4 +28,4 @@ title: 第一部分：入门篇
 
 ---
 
-[返回首页](../index.md) | [下一部分：Claude Code 篇](../02-claude-code/index.md)
+[返回首页](/) | [下一部分：Claude Code 篇](../02-claude-code/)
