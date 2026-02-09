@@ -93,11 +93,53 @@ Claude Code 特别擅长这些场景：
 
 ---
 
-## 与其他工具的区别
+## 优势与局限
 
-相比 GitHub Copilot 这样的编辑器插件，Claude Code 的优势在于它能处理更复杂的任务。Copilot 擅长代码补全和单文件生成，而 Claude Code 能够理解整个项目，协调多个文件的修改，执行完整的工作流程。
+### 相比其他工具的优势
+
+相比 Codex 这样的代码生成工具，Claude Code 的优势在于它能处理更复杂的任务。Codex 擅长精准的代码生成和补全，而 Claude Code 能够理解整个项目，协调多个文件的修改，执行完整的工作流程。
 
 相比直接使用 ChatGPT 或 Claude 网页版，Claude Code 的优势在于它能直接操作你的代码库。你不需要来回复制粘贴代码，不需要手动执行命令，不需要自己整合 AI 的建议。Claude Code 会直接修改文件、运行测试、提交代码，真正实现自动化。
+
+### 需要注意的局限性
+
+虽然 Claude Code 功能强大，但也有一些需要注意的局限：
+
+**成本较高**
+
+Claude Code 使用 Claude 系列模型，特别是 Opus 和 Sonnet，价格相对较高。如果频繁使用或处理大型项目，token 消耗会很快。相比之下，使用 GPT Plus 会员的 Codex 可能更经济实惠。建议：
+- 日常简单任务使用 Haiku 模型
+- 复杂任务才使用 Opus
+- 考虑使用中转服务降低成本
+- 合理使用 Plan 模式，避免反复试错
+
+**速度与准确性的权衡**
+
+Claude Code 的响应速度虽然比 Codex 快，但在代码准确性上可能略逊一筹。Claude 生成的代码有时会包含小 bug，需要额外的测试和修复。这在快速迭代时很有用，但在对代码质量要求极高的场景下，可能需要更多人工审查。
+
+**领域适配性差异**
+
+Claude 模型在不同编程领域的表现并不均衡。它特别擅长：
+- **前端开发**：React、Vue、HTML/CSS 等界面相关代码
+- **Python 开发**：数据处理、脚本编写、Web 框架
+- **数据分析**：pandas、numpy、数据可视化
+- **文档和配置**：Markdown、JSON、YAML
+
+但在以下领域可能不如专门的工具：
+- **系统编程**：C/C++、Rust 等底层语言
+- **后端复杂逻辑**：分布式系统、高并发架构
+- **算法优化**：性能关键的算法实现
+- **嵌入式开发**：硬件相关的底层代码
+
+如果你的项目主要涉及后端系统编程或性能敏感的算法，Codex 可能是更好的选择。但如果是前端、数据分析或 Python 项目，Claude Code 会非常高效。
+
+**上下文限制**
+
+虽然 Claude 的上下文窗口很大，但在处理超大型项目时，仍然可能遇到上下文溢出的问题。这时需要手动分割任务，或者使用 Plan 模式来更好地管理上下文。
+
+**速率限制**
+
+Claude API 有速率限制，特别是在使用官方 API 时。频繁的请求可能会触发限流，影响工作效率。使用中转服务可以一定程度上缓解这个问题。
 
 ---
 
@@ -124,3 +166,9 @@ Claude Code 特别擅长这些场景：
 - [Claude Code Plan Mode 完整指南](https://www.vibecodingacademy.ai/blog/claude-code-plan-mode-complete-guide)
 - [如何在 Windows 11 上安装 Claude Code](https://interworks.com/blog/2026/01/27/how-to-install-claude-code-on-windows-11/)
 - [2026 年 AI 编程工具对比](https://www.tembo.io/blog/coding-cli-tools-comparison)
+- [Claude Code 优缺点深度分析](https://help.apiyi.com/en/claude-code-pros-cons-ban-risk-analysis-en.html)
+- [Claude Code 速率限制详解](https://like2byte.com/claude-code-rate-limits-unlimited-ai-collapse/)
+- [何时不应使用 Claude Code](https://blog.airefinder.com/claude-code/)
+- [Claude vs ChatGPT vs Copilot 对比](https://learn.ryzlabs.com/ai-coding-assistants/claude-vs-chatgpt-vs-copilot-which-ai-coding-assistant-reigns-supreme-in-2026)
+- [2026 年最佳 AI 编程工具测评](https://localaimaster.com/models/best-ai-coding-models)
+
