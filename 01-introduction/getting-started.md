@@ -17,24 +17,59 @@ title: 准备工作
 
 ---
 
-## 账号注册
+## 账号注册与推荐方案
 
 ### Claude (Anthropic)
 
+**官方渠道：**
 1. 访问 [claude.ai](https://claude.ai)
 2. 使用邮箱或 Google 账号注册
 3. 验证邮箱
 4. 获取 API Key：访问 [console.anthropic.com](https://console.anthropic.com)
 
+**实用建议：**
+
+Claude 官方 API 在中国区使用存在一些问题：容易遇到账号封禁，且价格相对较高。更推荐使用中转服务。
+
+**推荐方案：ikuncode 中转站**
+- 使用 0.4x 倍率的反代服务
+- 价格更实惠，稳定性好
+- 访问：[ikuncode.com](https://ikuncode.com)
+- 注册后获取 API Key，使用方式与官方完全相同
+
 ### OpenAI (Codex/GPT)
 
+**方案一：GPT Plus 会员（推荐）**
+
+如果你已经订阅了 ChatGPT Plus 会员（$20/月），可以直接使用 Codex：
+- 额度较高，量大管饱
+- 直接在 ChatGPT 界面使用
+- 或通过 API 调用（需要单独申请 API 访问）
+
+**方案二：rightcode 中转站**
+
+如果没有 Plus 会员，推荐使用 rightcode 中转站：
+- 订阅价格：一个月几十块人民币
+- 额度基本用不完
+- 访问：[rightcode.cn](https://rightcode.cn)
+- 提供稳定的 API 访问
+
+**官方渠道：**
 1. 访问 [platform.openai.com](https://platform.openai.com)
 2. 注册账号
-3. 绑定支付方式
+3. 绑定支付方式（需要国际信用卡）
 4. 在 API Keys 页面创建密钥
 
 ### Google (Gemini)
 
+**推荐方案：淘宝购买 Gemini Pro 会员**
+
+Gemini Pro 会员可以考虑在淘宝购买：
+- 搜索"Gemini Pro 会员"或"Google One AI Premium"
+- 价格相对实惠
+- 包含 Gemini Advanced 访问权限
+
+**官方渠道：**
 1. 访问 [ai.google.dev](https://ai.google.dev)
 2. 使用 Google 账号登录
 3. 在 Google AI Studio 中获取 API Key
@@ -42,9 +77,21 @@ title: 准备工作
 
 ### xAI (Grok)
 
-1. 需要 X (Twitter) Premium 订阅
-2. 访问 [x.ai](https://x.ai)
-3. API 访问可能需要申请
+**推荐方案：使用免费版**
+
+Grok 的免费版本已经足够日常使用，无需付费。
+
+**如果需要付费版本：**
+- 将 VPN 节点切换到印度
+- 订阅价格约 40 多元人民币/月（印度区价格）
+- 使用 Visa 卡支付
+- 比美国区便宜很多
+
+**官方渠道：**
+1. 需要 X (Twitter) 账号
+2. 访问 [x.ai](https://x.ai) 或在 X 平台使用
+3. 免费版可直接使用
+4. Premium 订阅获得更多功能
 
 ---
 
@@ -54,7 +101,25 @@ title: 准备工作
 
 API Key 是用于身份验证的密钥，类似于密码。每次调用 API 时都需要提供。
 
-### 获取步骤
+### 中转站 API Key 获取
+
+**ikuncode（Claude）:**
+```bash
+# 1. 访问 https://ikuncode.com
+# 2. 注册账号并充值
+# 3. 在控制台获取 API Key
+# 4. 使用时将 API 端点改为 ikuncode 提供的地址
+```
+
+**rightcode（OpenAI）:**
+```bash
+# 1. 访问 https://rightcode.cn
+# 2. 注册并订阅套餐
+# 3. 获取 API Key
+# 4. 配置 API 端点为 rightcode 提供的地址
+```
+
+### 官方 API Key 获取
 
 **Claude:**
 ```bash
@@ -206,7 +271,20 @@ npm install @google/generative-ai
 
 ## 费用说明
 
-### Claude
+### 推荐方案费用对比
+
+| 服务 | 方案 | 费用 | 说明 |
+|------|------|------|------|
+| Claude | ikuncode 中转 | 按量计费，0.4x 倍率 | 比官方便宜，稳定可靠 |
+| Codex | GPT Plus 会员 | $20/月 | 额度高，量大管饱 |
+| Codex | rightcode 中转 | 几十元/月 | 订阅制，基本用不完 |
+| Gemini | 淘宝 Pro 会员 | 约 100-150 元/月 | 包含 Advanced 功能 |
+| Grok | 免费版 | 免费 | 日常使用足够 |
+| Grok | 印度区付费 | 约 40 元/月 | 比美国区便宜 |
+
+### 官方定价参考
+
+**Claude 官方：**
 
 | 模型 | 输入价格 | 输出价格 | 上下文窗口 |
 |------|---------|---------|-----------|
@@ -214,7 +292,7 @@ npm install @google/generative-ai
 | Claude 3 Opus | $15/1M tokens | $75/1M tokens | 200K |
 | Claude 3 Haiku | $0.25/1M tokens | $1.25/1M tokens | 200K |
 
-### OpenAI
+**OpenAI 官方：**
 
 | 模型 | 输入价格 | 输出价格 | 上下文窗口 |
 |------|---------|---------|-----------|
@@ -222,17 +300,19 @@ npm install @google/generative-ai
 | GPT-4 | $30/1M tokens | $60/1M tokens | 8K |
 | GPT-3.5 Turbo | $0.5/1M tokens | $1.5/1M tokens | 16K |
 
-### Gemini
+**Gemini 官方：**
 
 | 模型 | 免费额度 | 付费价格 | 上下文窗口 |
 |------|---------|---------|-----------|
 | Gemini 1.5 Pro | 50 请求/天 | $7/1M tokens | 1M |
 | Gemini 1.5 Flash | 1500 请求/天 | $0.35/1M tokens | 1M |
 
-### Grok
+### 省钱建议
 
-- 需要 X Premium 订阅（$8-16/月）
-- API 定价待公布
+1. **优先使用免费额度**：Gemini 的免费额度很高，适合日常使用
+2. **选择中转服务**：比官方便宜，且更稳定
+3. **合理选择模型**：不是所有任务都需要最强的模型
+4. **使用会员套餐**：如果使用频繁，订阅制更划算
 
 ---
 
