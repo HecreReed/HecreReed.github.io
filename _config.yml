@@ -104,14 +104,10 @@ navigation:
   - title: 实战项目篇
     url: /07-projects/
     children:
-      - title: 智能代码审查系统
-        url: /07-projects/code-review-system
-      - title: 文档生成器
-        url: /07-projects/doc-generator
-      - title: 内容分析平台
-        url: /07-projects/content-analysis
-      - title: 个人 AI 助手
-        url: /07-projects/personal-assistant
+      - title: 全自动输出代码与上传服务器测试
+        url: /07-projects/auto-deploy-test
+      - title: Linux图形化界面修复
+        url: /07-projects/linux-gui-fix
   - title: 资源与附录
     url: /08-resources/
     children:
