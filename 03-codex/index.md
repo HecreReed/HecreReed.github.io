@@ -8,50 +8,41 @@ permalink: /03-codex/
 
 # 第三部分：OpenAI Codex 篇
 
-学习 OpenAI Codex 和 GitHub Copilot 的使用技巧。
+学习 OpenAI Codex 的使用技巧和最佳实践。
 
 ## 📚 章节内容
 
 ### [10. Codex 简介](introduction.md)
-- Codex 的发展历史
-- Codex 与 GPT 的关系
-- Codex 的能力边界
-- 当前状态与替代方案
+- 多平台支持（VS Code、Codex App）
+- 模型选择与思考模式
+- 适用场景与优势
+- 定价模式
 
-### [11. GitHub Copilot](github-copilot.md)
-- GitHub Copilot 简介
-- 安装与激活
-- 基础使用（代码补全、注释生成代码、测试用例生成）
-- Copilot Chat
-- Copilot CLI
+### [11. 安装与配置](installation.md)
+- VS Code 插件安装
+- Codex App 安装（macOS）
+- API Key 配置
+- 模型选择与设置
 
-### [12. Codex API 使用](api-usage.md)
-- API 接口说明
-- 认证与授权
-- 请求参数详解
-- 响应处理
-- 错误处理
-
-### [13. 实战技巧](tips-and-tricks.md)
-- 提示词工程
-- 代码片段生成
-- 多语言支持
-- 与 IDE 集成
-- 最佳实践
-
-### [14. 应用场景](use-cases.md)
+### [12. 基础使用](basic-usage.md)
 - 代码补全与建议
 - 代码解释与文档
-- 代码转换（语言互转）
-- 正则表达式生成
-- SQL 查询生成
+- 思考模式选择
+- 基本交互方式
 
-## 💡 重要提示
+### [13. 高级功能](advanced-features.md)
+- xhigh 模式深度使用
+- 大型项目维护
+- 底层语言开发
+- 小众语言支持
 
-- Codex 已逐步被 GPT-4 等模型替代
-- GitHub Copilot 是目前最主流的应用
-- 建议重点学习 Copilot 的使用
+### [14. 最佳实践](best-practices.md)
+- 何时使用 Codex
+- 模型选择策略
+- 成本优化
+- 与 Claude Code 配合使用
 
 ---
 
 [上一部分：Claude Code 篇](../02-claude-code/index.md) | [返回首页](../index.md) | [下一部分：Gemini 篇](../04-gemini/index.md)
+
