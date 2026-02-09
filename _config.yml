@@ -1,6 +1,6 @@
 # Site settings
-title: My Wiki
-description: Personal knowledge base and documentation
+title: AI Agent 与 AI 使用指南
+description: 全面的 AI Agent 使用教程 - Claude Code, Codex, Gemini, Grok
 baseurl: ""
 url: "https://HecreReed.github.io"
 
