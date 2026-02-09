@@ -25,40 +25,40 @@ title: AI Agent 与 AI 使用指南
 
 ## 📚 内容导航
 
-### [第一部分：入门篇](_docs/01-introduction/)
+### [第一部分：入门篇](01-introduction/)
 了解 AI Agent 的基础概念、准备工作和基本术语。
 
-### [第二部分：Claude Code 篇](_docs/02-claude-code/)
+### [第二部分：Claude Code 篇](02-claude-code/)
 深入学习 Claude Code 的安装、配置、使用和最佳实践。
 
-### [第三部分：Codex 篇](_docs/03-codex/)
+### [第三部分：Codex 篇](03-codex/)
 掌握 OpenAI Codex 和 GitHub Copilot 的使用技巧。
 
-### [第四部分：Gemini 篇](_docs/04-gemini/)
+### [第四部分：Gemini 篇](04-gemini/)
 探索 Google Gemini 的多模态能力和编程应用。
 
-### [第五部分：Grok 篇](_docs/05-grok/)
+### [第五部分：Grok 篇](05-grok/)
 了解 Grok 的特色功能和实时信息获取能力。
 
-### [第六部分：进阶与对比篇](_docs/06-advanced/)
+### [第六部分：进阶与对比篇](06-advanced/)
 工具对比、多 Agent 协作、安全与性能优化。
 
-### [第七部分：实战项目篇](_docs/07-projects/)
+### [第七部分：实战项目篇](07-projects/)
 通过实际项目学习如何应用这些工具。
 
-### [第八部分：资源与附录](_docs/08-resources/)
+### [第八部分：资源与附录](08-resources/)
 学习资源、工具库、FAQ 和术语表。
 
 ## 🚀 快速开始
 
-1. **新手入门**：从[什么是 AI Agent](_docs/01-introduction/what-is-ai-agent) 开始
-2. **工具选择**：查看[工具对比](_docs/06-advanced/comparison)了解各工具特点
+1. **新手入门**：从[什么是 AI Agent](01-introduction/what-is-ai-agent) 开始
+2. **工具选择**：查看[工具对比](06-advanced/comparison)了解各工具特点
 3. **动手实践**：选择一个工具，跟随教程开始实践
 4. **深入学习**：阅读进阶内容和实战案例
 
 ## 📋 完整大纲
 
-查看[完整大纲](_docs/outline)了解所有章节内容。
+查看[完整大纲](outline)了解所有章节内容。
 
 ## 💡 使用建议
 
@@ -69,7 +69,7 @@ title: AI Agent 与 AI 使用指南
 
 ## 🤝 贡献
 
-欢迎贡献内容！查看[贡献指南](_docs/08-resources/contributing)了解如何参与。
+欢迎贡献内容！查看[贡献指南](08-resources/contributing)了解如何参与。
 
 ## 📮 反馈
 

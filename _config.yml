@@ -16,19 +16,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Collections for organizing wiki content
-collections:
-  docs:
-    output: true
-    permalink: /:path/
-
 # Navigation
 defaults:
-  - scope:
-      path: ""
-      type: "docs"
-    values:
-      layout: "default"
   - scope:
       path: ""
     values:
