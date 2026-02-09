@@ -1,0 +1,377 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --bg-color: #0f172a;
+    --sidebar-bg: #1e293b;
+    --content-bg: #1e293b;
+    --text-color: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+    --hover-bg: #334155;
+    --active-color: #3b82f6;
+    --code-bg: #0f172a;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+/* 容器布局 */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 280px;
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem 0;
+}
+
+.sidebar-header {
+    padding: 0 1.5rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-header h1 a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sidebar-header p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* 导航样式 */
+.sidebar-nav {
+    padding: 0 1rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 0.25rem;
+}
+
+.nav-item > a {
+    display: block;
+    padding: 0.625rem 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.nav-item > a:hover {
+    background: var(--hover-bg);
+    color: var(--active-color);
+}
+
+.nav-item.active > a {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 子导航 */
+.nav-children {
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.nav-item.has-children.open .nav-children {
+    display: block;
+}
+
+.nav-item.has-children > a::after {
+    content: "›";
+    float: right;
+    transition: transform 0.2s;
+}
+
+.nav-item.has-children.open > a::after {
+    transform: rotate(90deg);
+}
+
+.nav-child a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.nav-child a:hover {
+    background: var(--hover-bg);
+    color: var(--text-color);
+}
+
+.nav-child.active a {
+    color: var(--active-color);
+    font-weight: 500;
+}
+
+/* 侧边栏底部 */
+.sidebar-footer {
+    padding: 1.5rem 1.5rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.sidebar-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+}
+
+.sidebar-footer a:hover {
+    color: var(--text-color);
+}
+
+/* 主内容区 */
+.main-content {
+    margin-left: 280px;
+    flex: 1;
+    padding: 3rem;
+    max-width: 1200px;
+}
+
+article {
+    background: var(--content-bg);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text-color);
+}
+
+h1 { font-size: 2.25rem; margin-top: 0; }
+h2 { font-size: 1.875rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
+
+/* 段落和文本 */
+p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--active-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 列表 */
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    color: var(--text-secondary);
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* 代码块 */
+code {
+    background: var(--code-bg);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    color: #f472b6;
+    font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+}
+
+pre {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+pre code {
+    background: none;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: var(--code-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background: var(--hover-bg);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+td {
+    color: var(--text-secondary);
+}
+
+/* 引用块 */
+blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* 分隔线 */
+hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0;
+}
+
+/* 按钮 */
+.btn {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    text-decoration: none;
+}
+
+/* 返回顶部按钮 */
+#back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* 页脚 */
+.page-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+
+    article {
+        padding: 1.5rem;
+    }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-bg);
+}

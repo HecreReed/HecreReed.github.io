@@ -1,9 +1,6 @@
 ---
 layout: default
 title: 入门篇
-nav_order: 2
-has_children: true
-permalink: /01-introduction/
 ---
 
 # 第一部分：入门篇

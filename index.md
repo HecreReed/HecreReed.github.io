@@ -1,19 +1,12 @@
 ---
 layout: default
 title: 首页
-nav_order: 1
 description: "全面的 AI Agent 使用教程，涵盖 Claude Code、Codex、Gemini、Grok 四大主流工具"
-permalink: /
 ---
 
 # AI Agent 使用指南
-{: .fs-9 }
 
 全面掌握主流 AI 编程工具的使用方法
-{: .fs-6 .fw-300 }
-
-[开始学习](#关于本指南){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[查看 GitHub](https://github.com/HecreReed/HecreReed.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -58,17 +51,11 @@ permalink: /
 
 ## 使用建议
 
-{: .note }
-> **循序渐进**
-> 建议按顺序阅读，从基础概念开始，逐步深入到高级应用。
+> **循序渐进** - 建议按顺序阅读，从基础概念开始，逐步深入到高级应用
 
-{: .important }
-> **动手实践**
-> 每个章节都包含实例，建议跟着操作以加深理解。
+> **动手实践** - 每个章节都包含实例，建议跟着操作以加深理解
 
-{: .tip }
-> **对比学习**
-> 横向对比不同工具的优劣，选择最适合你的工具。
+> **对比学习** - 横向对比不同工具的优劣，选择最适合你的工具
 
 ---
 

@@ -5,48 +5,47 @@ baseurl: ""
 url: "https://HecreReed.github.io"
 
 # Theme settings
-remote_theme: just-the-docs/just-the-docs
-
-# Color scheme
-color_scheme: dark
-
-# Logo
-# logo: "/assets/images/logo.png"
-
-# Search
-search_enabled: true
-search:
-  heading_level: 2
-  previews: 3
-  preview_words_before: 5
-  preview_words_after: 10
-  tokenizer_separator: /[\s/]+/
-  rel_url: true
-  button: false
-
-# Heading anchor links
-heading_anchors: true
-
-# Aux links (top right)
-aux_links:
-  "GitHub":
-    - "https://github.com/HecreReed/HecreReed.github.io"
-
-# Footer
-footer_content: "Copyright &copy; 2026 HecreReed. 使用 Just the Docs 主题构建。"
-
-# Back to top link
-back_to_top: true
-back_to_top_text: "返回顶部"
+theme: minima
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-remote-theme
 
-# Navigation
+# Navigation structure
+navigation:
+  - title: 首页
+    url: /
+  - title: 入门篇
+    url: /01-introduction/
+    children:
+      - title: 什么是 AI Agent
+        url: /01-introduction/what-is-ai-agent
+      - title: 准备工作
+        url: /01-introduction/getting-started
+      - title: 基础概念
+        url: /01-introduction/basic-concepts
+  - title: Claude Code 篇
+    url: /02-claude-code/
+  - title: Codex 篇
+    url: /03-codex/
+  - title: Gemini 篇
+    url: /04-gemini/
+  - title: Grok 篇
+    url: /05-grok/
+  - title: 进阶与对比篇
+    url: /06-advanced/
+  - title: 实战项目篇
+    url: /07-projects/
+  - title: 资源与附录
+    url: /08-resources/
+  - title: 完整大纲
+    url: /outline
+  - title: 编写指南
+    url: /writing-guide
+
+# Defaults
 defaults:
   - scope:
       path: ""

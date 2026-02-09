@@ -1,18 +1,18 @@
 ---
 layout: default
 title: 什么是 AI Agent
-parent: 入门篇
-nav_order: 1
 ---
 
 # 什么是 AI Agent
-{: .no_toc }
 
 ## 目录
-{: .no_toc .text-delta }
 
-1. TOC
-{:toc}
+- [AI Agent 的定义](#ai-agent-的定义)
+- [AI Agent 与传统 AI 的区别](#ai-agent-与传统-ai-的区别)
+- [AI Agent 的应用场景](#ai-agent-的应用场景)
+- [为什么需要学习 AI Agent](#为什么需要学习-ai-agent)
+- [AI Agent 的工作原理](#ai-agent-的工作原理)
+- [本指南涵盖的 AI Agent 工具](#本指南涵盖的-ai-agent-工具)
 
 ---
 
