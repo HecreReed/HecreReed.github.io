@@ -8,63 +8,31 @@ permalink: /04-gemini/
 
 # 第四部分：Google Gemini 篇
 
-探索 Google Gemini 的多模态能力和编程应用。
+探索 Google Gemini 的多模态能力和 Nano Banana 图像生成工具。
 
 ## 📚 章节内容
 
 ### [15. Gemini 简介](introduction.md)
-- Gemini 系列模型介绍（Ultra/Pro/Nano）
+- Gemini 系列模型介绍
 - 多模态能力
+- 超长上下文处理
+- 编程应用场景
 - 与其他模型的对比
 
-### [16. 快速开始](quick-start.md)
-- Google AI Studio 使用
-- API Key 获取
-- SDK 安装（Python/Node.js/REST API）
-- 第一个 Gemini 应用
-
-### [17. 核心功能](core-features.md)
-- 文本生成
-- 代码生成与理解
-- 图像理解与分析
-- 视频理解
-- 音频处理
-- 长上下文处理（1M+ tokens）
-
-### [18. API 详解](api-reference.md)
-- 模型选择
-- 参数配置（temperature、top_p、top_k、max_output_tokens）
-- 安全设置
-- 流式响应
-- 函数调用（Function Calling）
-
-### [19. 编程实战](programming.md)
-- 代码生成与补全
-- 代码审查与优化
-- 技术文档生成
-- 数据分析与可视化
-- 多模态应用开发
-
-### [20. 高级应用](advanced-topics.md)
-- RAG（检索增强生成）
-- 向量嵌入（Embeddings）
-- 微调（Fine-tuning）
-- 批量处理
-- 缓存优化
-
-### [21. 实战案例](case-studies.md)
-- 案例1：智能代码助手
-- 案例2：图像识别应用
-- 案例3：视频内容分析
-- 案例4：多语言翻译工具
-- 案例5：技术文档问答系统
+### [16. Nano Banana](nano-banana.md)
+- Nano Banana 简介
+- 图像生成功能
+- 提示词技巧
+- 实际应用案例
+- 与其他图像生成工具对比
 
 ## 🌟 Gemini 的独特优势
 
-- **超长上下文**：支持 1M+ tokens
-- **多模态能力**：文本、图像、视频、音频
-- **高性价比**：免费额度较高
-- **实时处理**：快速响应
+- **超长上下文**：支持 1M+ tokens，可处理整个代码库
+- **多模态能力**：文本、图像、视频、音频全面支持
+- **高性价比**：免费额度较高，适合个人开发者
+- **实时处理**：快速响应，适合交互式应用
+- **Nano Banana**：强大的 AI 图像生成工具
 
 ---
 
