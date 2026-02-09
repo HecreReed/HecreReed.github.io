@@ -34,7 +34,7 @@ Claude 官方 API 在中国区使用存在一些问题：容易遇到账号封�
 **推荐方案：ikuncode 中转站**
 - 使用 0.4x 倍率的反代服务
 - 价格更实惠，稳定性好
-- 访问：[ikuncode.com](https://ikuncode.com)
+- 访问：[ikuncode.com](https://api.ikuncode.cc/)
 - 注册后获取 API Key，使用方式与官方完全相同
 
 ### OpenAI (Codex/GPT)
@@ -51,7 +51,7 @@ Claude 官方 API 在中国区使用存在一些问题：容易遇到账号封�
 如果没有 Plus 会员，推荐使用 rightcode 中转站：
 - 订阅价格：一个月几十块人民币
 - 额度基本用不完
-- 访问：[rightcode.cn](https://rightcode.cn)
+- 访问：[rightcode.cn](https://www.right.codes/)
 - 提供稳定的 API 访问
 
 **官方渠道：**
