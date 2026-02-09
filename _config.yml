@@ -28,18 +28,105 @@ navigation:
         url: /01-introduction/basic-concepts
   - title: Claude Code 篇
     url: /02-claude-code/
+    children:
+      - title: 简介
+        url: /02-claude-code/introduction
+      - title: 安装与配置
+        url: /02-claude-code/installation
+      - title: 基础使用
+        url: /02-claude-code/basic-usage
+      - title: 高级功能
+        url: /02-claude-code/advanced-features
+      - title: 最佳实践
+        url: /02-claude-code/best-practices
+      - title: 实战案例
+        url: /02-claude-code/case-studies
   - title: Codex 篇
     url: /03-codex/
+    children:
+      - title: 简介
+        url: /03-codex/introduction
+      - title: GitHub Copilot
+        url: /03-codex/github-copilot
+      - title: API 使用
+        url: /03-codex/api-usage
+      - title: 实战技巧
+        url: /03-codex/tips-and-tricks
+      - title: 应用场景
+        url: /03-codex/use-cases
   - title: Gemini 篇
     url: /04-gemini/
+    children:
+      - title: 简介
+        url: /04-gemini/introduction
+      - title: 快速开始
+        url: /04-gemini/quick-start
+      - title: 核心功能
+        url: /04-gemini/core-features
+      - title: API 详解
+        url: /04-gemini/api-reference
+      - title: 编程实战
+        url: /04-gemini/programming
+      - title: 高级应用
+        url: /04-gemini/advanced-topics
+      - title: 实战案例
+        url: /04-gemini/case-studies
   - title: Grok 篇
     url: /05-grok/
+    children:
+      - title: 简介
+        url: /05-grok/introduction
+      - title: 访问与使用
+        url: /05-grok/access-and-usage
+      - title: API
+        url: /05-grok/api
+      - title: 特色功能
+        url: /05-grok/features
+      - title: 编程应用
+        url: /05-grok/programming
+      - title: 使用技巧
+        url: /05-grok/tips
   - title: 进阶与对比篇
     url: /06-advanced/
+    children:
+      - title: 四大工具对比
+        url: /06-advanced/comparison
+      - title: 如何选择工具
+        url: /06-advanced/choosing-tools
+      - title: 多 Agent 协作
+        url: /06-advanced/multi-agent
+      - title: Prompt Engineering
+        url: /06-advanced/prompt-engineering
+      - title: 安全与伦理
+        url: /06-advanced/security
+      - title: 性能优化
+        url: /06-advanced/optimization
   - title: 实战项目篇
     url: /07-projects/
+    children:
+      - title: 智能代码审查系统
+        url: /07-projects/code-review-system
+      - title: 文档生成器
+        url: /07-projects/doc-generator
+      - title: 内容分析平台
+        url: /07-projects/content-analysis
+      - title: 个人 AI 助手
+        url: /07-projects/personal-assistant
   - title: 资源与附录
     url: /08-resources/
+    children:
+      - title: 学习资源
+        url: /08-resources/learning-resources
+      - title: 工具与库
+        url: /08-resources/tools-and-libraries
+      - title: 常见问题 FAQ
+        url: /08-resources/faq
+      - title: 术语表
+        url: /08-resources/glossary
+      - title: 更新日志
+        url: /08-resources/changelog
+      - title: 贡献指南
+        url: /08-resources/contributing
   - title: 完整大纲
     url: /outline
   - title: 编写指南
