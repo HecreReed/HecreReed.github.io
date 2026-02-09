@@ -20,13 +20,17 @@ plugins:
 collections:
   docs:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
 
 # Navigation
 defaults:
   - scope:
       path: ""
       type: "docs"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
     values:
       layout: "default"
 
