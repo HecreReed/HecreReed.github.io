@@ -71,7 +71,8 @@
 
         // 自动展开当前激活的菜单
         document.querySelectorAll('.nav-item.has-children').forEach(item => {
-            if (item.querySelector('.nav-child.active')) {
+            // 如果父菜单是active状态，或者子菜单中有active项，就展开
+            if (item.classList.contains('active') || item.querySelector('.nav-child.active')) {
                 item.classList.add('open');
             }
         });

@@ -94,8 +94,9 @@ body {
 }
 
 .nav-item.active > a {
-    background: var(--primary-color);
-    color: white;
+    background: var(--hover-bg);
+    color: var(--active-color);
+    font-weight: 600;
 }
 
 /* 子导航 */
@@ -137,7 +138,21 @@ body {
 
 .nav-child.active a {
     color: var(--active-color);
-    font-weight: 500;
+    font-weight: 600;
+    background: var(--hover-bg);
+    position: relative;
+}
+
+.nav-child.active a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: var(--active-color);
+    border-radius: 0 2px 2px 0;
 }
 
 /* 侧边栏底部 */
