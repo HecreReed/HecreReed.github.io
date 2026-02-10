@@ -39,13 +39,7 @@ description: "全面的 AI Agent 使用教程，涵盖 Claude Code、Codex、Gem
 了解 Grok 的特色功能和实时信息获取能力
 
 ### 🔧 [进阶与对比篇](06-advanced/)
-工具对比、多 Agent 协作、安全与性能优化
-
-### 📖 [实战项目篇](07-projects/)
-通过实际项目学习如何应用这些工具
-
-### 📚 [资源与附录](08-resources/)
-学习资源、工具库、FAQ 和术语表
+MCP 服务器、Skills 功能、WebSearch 功能
 
 ---
 

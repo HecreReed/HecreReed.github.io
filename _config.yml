@@ -69,32 +69,6 @@ navigation:
         url: /06-advanced/skills
       - title: WebSearch 功能
         url: /06-advanced/websearch
-  - title: 实战项目篇
-    url: /07-projects/
-    children:
-      - title: 全自动输出代码与上传服务器测试
-        url: /07-projects/auto-deploy-test
-      - title: Linux图形化界面修复
-        url: /07-projects/linux-gui-fix
-  - title: 资源与附录
-    url: /08-resources/
-    children:
-      - title: 学习资源
-        url: /08-resources/learning-resources
-      - title: 工具与库
-        url: /08-resources/tools-and-libraries
-      - title: 常见问题 FAQ
-        url: /08-resources/faq
-      - title: 术语表
-        url: /08-resources/glossary
-      - title: 更新日志
-        url: /08-resources/changelog
-      - title: 贡献指南
-        url: /08-resources/contributing
-  - title: 完整大纲
-    url: /outline
-  - title: 编写指南
-    url: /writing-guide
 
 # Defaults
 defaults:
