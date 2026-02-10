@@ -39,8 +39,6 @@ navigation:
         url: /02-claude-code/advanced-features
       - title: 最佳实践
         url: /02-claude-code/best-practices
-      - title: 实战案例
-        url: /02-claude-code/case-studies
   - title: Codex 篇
     url: /03-codex/
     children:
