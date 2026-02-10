@@ -46,61 +46,31 @@ navigation:
     children:
       - title: 简介
         url: /03-codex/introduction
-      - title: GitHub Copilot
-        url: /03-codex/github-copilot
       - title: API 使用
         url: /03-codex/api-usage
       - title: 实战技巧
         url: /03-codex/tips-and-tricks
-      - title: 应用场景
-        url: /03-codex/use-cases
   - title: Gemini 篇
     url: /04-gemini/
     children:
       - title: 简介
         url: /04-gemini/introduction
-      - title: 快速开始
-        url: /04-gemini/quick-start
-      - title: 核心功能
-        url: /04-gemini/core-features
-      - title: API 详解
-        url: /04-gemini/api-reference
-      - title: 编程实战
-        url: /04-gemini/programming
-      - title: 高级应用
-        url: /04-gemini/advanced-topics
-      - title: 实战案例
-        url: /04-gemini/case-studies
+      - title: Nano Banana
+        url: /04-gemini/nano-banana
   - title: Grok 篇
     url: /05-grok/
     children:
       - title: 简介
         url: /05-grok/introduction
-      - title: 访问与使用
-        url: /05-grok/access-and-usage
-      - title: API
-        url: /05-grok/api
-      - title: 特色功能
-        url: /05-grok/features
-      - title: 编程应用
-        url: /05-grok/programming
-      - title: 使用技巧
-        url: /05-grok/tips
   - title: 进阶与对比篇
     url: /06-advanced/
     children:
-      - title: 四大工具对比
-        url: /06-advanced/comparison
-      - title: 如何选择工具
-        url: /06-advanced/choosing-tools
-      - title: 多 Agent 协作
-        url: /06-advanced/multi-agent
-      - title: Prompt Engineering
-        url: /06-advanced/prompt-engineering
-      - title: 安全与伦理
-        url: /06-advanced/security
-      - title: 性能优化
-        url: /06-advanced/optimization
+      - title: MCP 服务器
+        url: /06-advanced/mcp
+      - title: Skills 功能
+        url: /06-advanced/skills
+      - title: WebSearch 功能
+        url: /06-advanced/websearch
   - title: 实战项目篇
     url: /07-projects/
     children:
