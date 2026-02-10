@@ -12,52 +12,30 @@ permalink: /06-advanced/
 
 ## 📚 章节内容
 
-### [28. 四大工具对比](comparison.md)
-- 功能对比矩阵
-- 性能对比
-- 价格对比
-- 适用场景对比
-- 优缺点分析
+### [18. MCP 服务器](mcp.md)
+- MCP 是什么
+- 常用 MCP 服务器
+- 如何配置和使用
+- 实际应用场景
 
-### [29. 如何选择合适的工具](choosing-tools.md)
-- 根据任务类型选择
-- 根据预算选择
-- 根据技术栈选择
-- 组合使用策略
+### [19. Skills 功能](skills.md)
+- Skills 的作用
+- 如何创建 Skills
+- 实用 Skills 示例
+- 团队协作技巧
 
-### [30. 多 Agent 协作](multi-agent.md)
-- 工作流设计
-- 任务分配策略
-- 结果整合
-- 实战案例
-
-### [31. Prompt Engineering 进阶](prompt-engineering.md)
-- 高级提示词技巧
-- Chain of Thought
-- Few-shot Learning
-- Role Prompting
-- 提示词模板库
-
-### [32. 安全与伦理](security.md)
-- 数据隐私保护
-- 代码安全审查
-- 避免有害输出
-- 合规性考虑
-- 最佳安全实践
-
-### [33. 性能优化](optimization.md)
-- Token 使用优化
-- 响应速度优化
-- 成本控制
-- 缓存策略
-- 批量处理技巧
+### [20. WebSearch 功能](websearch.md)
+- 实时搜索的重要性
+- 如何使用 WebSearch
+- 搜索技巧和最佳实践
+- 与其他功能配合
 
 ## 💡 使用建议
 
-- 对比学习，找出各工具的最佳使用场景
-- 实践多 Agent 协作，提升复杂任务处理能力
-- 重视安全和隐私，建立良好的使用习惯
-- 持续优化，降低成本提高效率
+- 配置好 MCP 服务器，扩展 AI 工具的能力
+- 用 Skills 自动化重复性任务
+- 善用 WebSearch 获取最新信息
+- 这些功能配合使用效果更好
 
 ---
 
